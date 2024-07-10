@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--Font/Icons Imports-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Happy Birthday Love!</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+
+        <div class="book">
+            <!--Home Page-->
+            <div class="book-page page-left">
+                <div class="home-page">
+                    <img src="images/photo_6084546492137324232_y.jpg" alt="">
+                    <h1>Happy Birthday</h1>
+                    <h3>Palanggaaaa!</h3>
+
+                    <p>
+                        Wala ko naghatag ug letter nimo ron na year kay kani ako gihimo hihe.
+                    </p>
+
+                    <button class="audio-btn" onclick="playMusic()">
+                        <p>Music?</p>
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                    <audio id="birthdayMusic" src="images/Billie Eilish - BIRDS OF A FEATHER (Official Lyric Video) (64).mp3"></audio>
+                </div>
+            </div>
+
+             <!--page 1 & 2-->
+            <div class="book-page page-right turn" id="turn-1">
+                <!--page 1(intro section)-->
+                <div class="page-front">
+                    <h1 class="title">Message for my Baby</h1>
+
+                    <div class="message-box">
+                        <div class="message-content">
+                            <p>
+                                Happy 20th birthday to the sweetest baby in the universeeee! 
+                                I thank God everyday kay gihimo ka Niya. Thank you for blessing 
+                                us with your existence my love. You are such a wonderful human being 
+                                pangga. May your special day be filled with joy and all the little 
+                                things that would make your heart dance. I look forward to celebrating 
+                                more birthdays and creating wonderful memories with you baby. Happy birthday 
+                                my langga, I love you always and forever. Mwaaa🤍
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="number-page">1</span>
+
+                    <!--next button-->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!--page 2(gallery section)-->
+                <div class="page-back">
+                    <h1 class="title">Cutie Pics sa Akong Baby</h1>
+                    <div class="gallery">
+                        <div class="photo-item">
+                            <img src="images/image1.jpg" alt="Photo 1">
+                            <p>Miming Tam-tam</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image2.jpg" alt="Photo 2">
+                            <p>My Siopao</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image3.jpg" alt="Photo 3">
+                            <p>Pretty eyed baby</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image4.jpg" alt="Photo 4">
+                            <p>Litol Siopao pa</p>
+                        </div>
+                    </div>
+
+                    <span class="number-page">2</span>
+
+                    <!--prev button-->
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!--page 3 & 4-->
+            <div class="book-page page-right turn" id="turn-2">
+                <!--page 3 (gallery section pt.2)-->
+                <div class="page-front">
+                    <h1 class="title">Pics Natooo</h1>
+                    <div class="gallery">
+                        <div class="photo-item">
+                            <img src="images/image5.jpg" alt="Photo 1">
+                            <p>Shades cutie</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image6.jpg" alt="Photo 2">
+                            <p>Anniversary Pic</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image7.jpg" alt="Photo 3">
+                            <p>Hihe</p>
+                        </div>
+                        <div class="photo-item">
+                            <img src="images/image8.jpg" alt="Photo 4">
+                            <p>Christmas Kiss</p>
+                        </div>
+                    </div>
+                    
+                    <span class="number-page">3</span>
+
+                    <!--next button-->
+                    <span class="nextprev-btn" data-page="turn-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!--page 4(final section)-->
+                <div class="page-back">
+                    <h1 class="title">The Closing Enchantment</h1>
+
+                    <div class="message-box">
+                        <div class="message-content">
+                            <p>
+                                I hope you'll appreciate this simple work that I did pangga. Sorry nalate hihe. Happy birthday my baby, I LOVE YOU ALWAYSSSS!
+                            </p>
+                            <div class="final-page">
+                                <img src="images/final.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="number-page">4</span>
+
+                    <!--prev button-->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                    
+                </div>
+            </div>
+
+        </div>
+
+       
+    </div>
+
+    <!--TYPED JS-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--MAIN JS-->
+    <script src="script.js"></script>
+</body>
+
+</html>
